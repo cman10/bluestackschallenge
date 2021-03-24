@@ -4,7 +4,6 @@ import './CampaignFrame.css';
 const CampaignFrame=({data})=>{
 return(
     <>
-      {console.log(data)}
     <div className="frameDetail grid-container" >
         <div>DATE</div>
         <div>CAMPAIGN</div>
@@ -12,7 +11,7 @@ return(
         <div>ACTIONS</div>
     </div>
     {
-        data.map(detail=><CampaignItem detail={detail}/>)
+        data.map(detail=><CampaignItem detail={detail} key={detail.region}/>)
     }
     
  </>
