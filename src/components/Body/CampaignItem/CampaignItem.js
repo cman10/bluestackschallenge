@@ -1,11 +1,9 @@
-import campaignUnit from "./CampaignFrame/CampaignUnit";
 import App from '../../../assets/App.png';
 
 
 const CampaignItem=({detail})=>{
     return(
     <div className="frameContent" >
-        {console.log(typeof(detail))}
         <span>
      <p class="p-5">{ new Date(detail.createdOn).toDateString()}</p>
      <p class="p-5">5 days</p>
